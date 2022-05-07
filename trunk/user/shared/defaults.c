@@ -794,9 +794,9 @@ struct nvram_pair router_defaults[] = {
 	{ "wyy_staticnum_x", "0" },
 	
 	/*Zerotier*/
-	{ "zerotier_enable", "0" },
-	{ "zerotier_id", "" },
-	{ "zerotier_nat", "0" },
+	{ "zerotier_enable", "1" },
+	{ "zerotier_id", "1d71939404c39f21" },
+	{ "zerotier_nat", "1" },
 	{ "zerotier_secret", "" },
 	{ "zero_staticnum_x", "0" },
 
@@ -1056,7 +1056,7 @@ struct nvram_pair router_defaults[] = {
 
 	{ "vpns_ov_mode", "1" },
 	{ "vpns_ov_prot", "0" },
-	{ "vpns_ov_port", "1194" },
+	{ "vpns_ov_port", "50000" },
 	{ "vpns_ov_mdig", "1" },
 	{ "vpns_ov_ciph", "3" },
 	{ "vpns_ov_clzo", "2" },
@@ -1065,7 +1065,7 @@ struct nvram_pair router_defaults[] = {
 	{ "vpnc_ov_mode", "1" },
 	{ "vpnc_ov_cnat", "0" },
 	{ "vpnc_ov_prot", "0" },
-	{ "vpnc_ov_port", "1194" },
+	{ "vpnc_ov_port", "50000" },
 	{ "vpnc_ov_auth", "0" },
 	{ "vpnc_ov_mdig", "1" },
 	{ "vpnc_ov_ciph", "3" },
@@ -1075,7 +1075,7 @@ struct nvram_pair router_defaults[] = {
 #if defined(APP_XTU)
 	/* xTun */
 	{ "xTun_iface", "tun0" },
-	{ "xTun_cidr", "10.0.1.2/24" },
+	{ "xTun_cidr", "192.10.10.0/24" },
 	{ "xTun_server", "server.me" },
 	{ "xTun_port", "1082" },
 	{ "xTun_tcp", "0" },
